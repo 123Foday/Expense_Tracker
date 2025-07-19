@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 💸 Expense Tracker App
 
-## Getting Started
+A modern full-stack expense tracking app built with **Next.js**, **Clerk Authentication**, **Drizzle ORM**, and **PostgreSQL**. Users can create budgets, add expenses, and monitor spending—all securely managed with Clerk.
 
-First, run the development server:
+## 🚀 Features
+
+- 🔐 Secure Sign-Up / Sign-In with Clerk
+- 📊 Budget and Expense Management
+- 📅 Date-based tracking using `moment.js`
+- 💾 PostgreSQL database with Drizzle ORM
+- 🎨 Stylish and responsive UI (Shadcn UI + Tailwind CSS)
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js 14 (App Router)
+- **Authentication:** Clerk
+- **Database:** PostgreSQL (via Drizzle ORM)
+- **Styling:** Tailwind CSS + Shadcn UI
+- **Icons:** Lucide
+- **Date Handling:** Moment.js
+
+## 📦 Installation
+
+### 1. Clone the Repository
 
 ```bash
+git clone https://github.com/123Foday/Expense_Tracker.git
+cd Expense_Tracker
+
+npm install
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+DATABASE_URL=your_postgres_database_url
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

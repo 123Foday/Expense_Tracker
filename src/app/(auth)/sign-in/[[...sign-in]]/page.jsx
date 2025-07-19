@@ -1,5 +1,9 @@
 import { SignIn } from "@clerk/nextjs";
 
+<SignIn 
+/>
+
+
 export default function Page() {
   return (
     <section className="bg-white">
